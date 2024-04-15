@@ -14,7 +14,4 @@ python /groups/guttman/projects/spidr/scripts/plot_assignment_distribution_RPM.p
 
 grep -v Cluster $clusterfile".cntrldistribution_1_0.8_100.counts" | sort -k1,1  > $clusterfile".controldistribution_1_0.8_100.sorted.counts"
 
-grep -v Cluster $clusterfile".torindistribution_1_0.8_100.counts" | sort -k1,1  > $clustefile".torindistribution_1_0.8_100.sorted.counts"
-
-join -j 1 $clusterfile".controldistribution_1_0.8_100.sorted.counts" $clusterfile".torindistribution_1_0.8_100.sorted.counts" > $clusterfile".joined.distribution.control.torin.sorted.counts"
-
+grep -v Cluster $clusterfile".torindistribution_1_0.8_100.counts" | sort -k1,1  > $clusterfile".torindistribution_1_0.8_100.sorted.counts"
